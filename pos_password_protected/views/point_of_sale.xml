@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="assets_backend2" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/pos_password_protected/static/src/js/pos_custom.js"></script>
+            </xpath>
+            <xpath expr="//link[@id='pos-stylesheet']" position="after">
+                <link rel="stylesheet" href="/pos_password_protected/static/src/css/pos_price_password.css"
+                      id="pos_password_protected"/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
